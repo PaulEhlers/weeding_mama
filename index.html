@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2{
+    font-family: "Raleway", sans-serif; 
+}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.bgimg {background-image: url("./images/schickes.jpg")}
+.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+
+.gold {
+    color: #dcc397;
+}
+
+.darkgold {
+    color: #827870;
+}
+
+.anthra {
+    background-color: #293133 !important;
+}
+
+.anthra_light {
+    background-color: #4c4c5c;
+}
+
+.google-maps {
+
+    position: relative;
+
+    padding-bottom: 50%;
+
+    height: 0;
+
+    overflow: hidden;
+
+}
+
+.google-maps iframe {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo">Sandra & Gregor</h1>
+    <h2>Heiraten am</h2>
+    <h2><b>27.08.2023</b></h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-black w3-center w3-padding w3-opacity-min w3-hover-opacity-off gold ">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button gold">Start</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button gold">Brautpaar</a>
+    <a href="#anreise" style="width:25%" class="w3-bar-item w3-button gold">Anreise</a>
+    <a href="#ablauf" style="width:25%" class="w3-bar-item w3-button w3-hover-black gold">Ablauf</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-grayscale-min anthra gold" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center darkgold"><b>Brautpaar</b></h1>
+    <img class="w3-round w3-grayscale-min" src="./images/adel.jpg" style="width:100%;margin:32px 0; border-radius: 2%;">
+    <p>Liebe Hochzeitsgäste<br>
+        Wir freuen uns mit Euch unsere Hochzeit zu feiern und ein paar schöne Stunden zu verbringen.<br>
+        Die Suche nach der Lokation sollte keine Wünsche offenlassen.
+    </p><br>
+    <ul>
+        <li>Perfekter Tanzboden</li>
+        <li>Hotel in fußläufiger Entfernung</li>
+        <li>Klimatisierter Festsaal</li>
+        <li>Tanzmusik für jedes Tanzpaar</li>
+        <li>Trauung vor Ort</li>
+    </ul>
+    <br>
+    <b>Absagen werden nur ungern bis zum 01.01.2023 unter den angegebenen Kontakten
+        entgegengenommen.</b>
+    <br>
+    Euer Brautpaar Sandra & Gregor
+    <!-- <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p> -->
+  </div>
+</div>
+
+<!-- Background photo -->
+<div class="w3-display-container bgimg2 anthra_light">
+  <div class="w3-display-middle w3-text-white w3-center">
+    <h1 class="w3-jumbo gold">Hier kommt Slider mit Bildern hin</h1><br>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center anthra" id="anreise">
+    <div class="w3-content gold">
+      <h1 class="gold"><b>Anreise</b></h1>
+      <div class="w3-row">
+          <h2>zum Rittergut Störmede</h2>
+          <h2>Albert-Brand-Straße 3, 59590 Geseke</h2>
+          <div class="google-maps" style="-webkit-filter: grayscale(100%);
+filter: grayscale(100%);">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2476.2115843788656!2d8.464848715963923!3d51.63765010899211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bbcd3bdc423b3f%3A0x1faf6b7d36f4e028!2sAlbert-Brand-Stra%C3%9Fe%203%2C%2059590%20Geseke!5e0!3m2!1sde!2sde!4v1661505723435!5m2!1sde!2sde" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"</iframe>
+            </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Wedding information -->
+<!-- <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>Wedding Ceremony - 2:00pm</p>
+        <p>Reception & Dinner - 5:00pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>Some place, an address</p>
+        <p>Some where, some address</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 anthra_light w3-center w3-wide gold" id="ablauf">
+  <h1>Ablauf</h1>
+  <p class="w3-large">Blah blah blah......</p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>Sincerely, John & Jane</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
