@@ -78,10 +78,6 @@ p {line-height: 2}
   object-fit: cover;
 }
 
-.ablauf {
-  @include 'css/ablauf.css';
-}
-
 </style>
 </head>
 <body>
@@ -134,7 +130,7 @@ p {line-height: 2}
 <div class="w3-display-container anthra_light">
   <!-- <div class="w3-display-middle w3-text-white w3-center"> -->
     <!-- <h1 class="w3-jumbo gold">Hier kommt Slider mit Bildern hin</h1><br> -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000" data-touch="true">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -280,3 +276,25 @@ filter: grayscale(100%);">
 
 </body>
 </html>
+
+<script>
+  $(document).ready(function() {
+    $('.carousel').on('touchstart', function(event){
+      const xClick = event.originalEvent.touches[0].pageX;
+      $(this).one('touchmove', function(event){
+          const xMove = event.originalEvent.touches[0].pageX;
+          const sensitivityInPx = 5;
+  
+          if( Math.floor(xClick - xMove) > sensitivityInPx ){
+              $(this).carousel('next');
+          }
+          else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+              $(this).carousel('prev');
+          }
+      });
+      $(this).on('touchend', function(){
+          $(this).off('touchmove');
+      });
+  });
+  });
+  </script>
